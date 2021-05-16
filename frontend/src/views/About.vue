@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <h1>This is an about page</h1>
-    {{ hello }}
+    This is fetched from Node: {{ hello }}
   </div>
 </template>
 
