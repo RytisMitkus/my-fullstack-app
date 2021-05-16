@@ -28,4 +28,4 @@ jobs:
         USERNAME: ${{ secrets.USERNAME }}
         PORT: ${{ secrets.PORT }}
         KEY: ${{ secrets.SSHKEY }}
-        script: cd /home/my-fullstack-app && npm run build-client && npm i && pm2 start --no-daemon backend/server.js
+        script: cd /home/my-fullstack-app && npm run build-client && npm i && pm2 restart web-interface backend/server.js -n Convertible9000 && pm2 monit
