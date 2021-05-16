@@ -6,7 +6,7 @@ const path = require('path');
 
 // app.use(express.static(path.join(__dirname, 'frontend/dist')))
 app.get('/api', (req, res) => {
-    res.send({ greetings: [{ msg: 'Hello Rytis' }, { msg: 'Autodeployd node as well' }] })
+    res.send({ greetings: [{ msg: 'Hello Rytis' }, { msg: 'Autodeployd node as well' }, { msg: 'restarted pm2' }] })
     console.log('hey')
 })
 
