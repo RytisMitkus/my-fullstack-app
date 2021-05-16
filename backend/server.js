@@ -1,12 +1,13 @@
 
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 5000
 const path = require('path');
 
-app.use(express.static(path.join(__dirname, 'frontend/dist')))
+// app.use(express.static(path.join(__dirname, 'frontend/dist')))
 app.get('/api', (req, res) => {
     res.send({ hello: 'Hello Rytis!' })
+    console.log('hey')
 })
 
 app.listen(port, () => {
