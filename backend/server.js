@@ -1,7 +1,7 @@
 
 import express from 'express'
 import mysql from 'mysql';
-import bodyParser from 'body-parser';
+// import bodyParser from 'body-parser';
 const app = express()
 const port = 5000
 // import path from 'path';
@@ -12,20 +12,20 @@ const port = 5000
 // parse application/json
 // app.use(bodyParser.json())
 
-// const db = mysql.createConnection({
-//     host: 'localhost',
-//     port: 8889,
-//     user: 'root',
-//     password: 'root',
-//     database: 'nodevue'
-// });
+const db = mysql.createConnection({
+    host: 'localhost',
+    port: 8889,
+    user: 'root',
+    password: 'root',
+    database: 'nodevue'
+});
 
-// db.connect((err) => {
-//     if (err) {
-//         throw err;
-//     }
-//     console.log('MySql connected...')
-// });
+db.connect((err) => {
+    if (err) {
+        throw err;
+    }
+    console.log('MySql connected...')
+});
 
 
 

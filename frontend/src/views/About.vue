@@ -25,7 +25,7 @@ export default {
   },
   created() {
     this.fetchData();
-    // this.fetchUser();
+    this.fetchUser();
     console.log(this.messages);
   },
 };
