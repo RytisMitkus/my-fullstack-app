@@ -44,6 +44,7 @@ app.get('/api/user', (req, res) => {
 
 })
 
+
 app.listen(portas, () => {
     console.log(`Example app listening at http://localhost:${portas}`)
 })
