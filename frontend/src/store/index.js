@@ -17,7 +17,6 @@ const store = createStore({
   actions: {
     async fetchData(context) {
       const { data } = await axios.get("/api");
-      console.log(data)
       context.commit('setMessages', data.greetings)
       console.log(data.greetings);
     },

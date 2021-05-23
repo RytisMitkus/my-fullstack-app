@@ -4,7 +4,7 @@
     <p v-for="message in messages" :key="message">{{ message.msg }}</p>
     <h2>This is autodeployed</h2>
     <button @click="clickas">click</button>
-    <p>{{ messages }} | {{ user }} | {{ messages }}</p>
+    <p>{{ messages }} | {{ user }}</p>
   </div>
 </template>
 
