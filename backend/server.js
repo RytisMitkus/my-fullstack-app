@@ -31,7 +31,7 @@ db.connect((err) => {
 
 // app.use(express.static(path.join(__dirname, 'frontend/dist')))
 app.get('/api', (req, res) => {
-    res.send({ greetings: [{ msg: 'Another hello' }, { msg: 'Hello Rytis' }, { msg: 'Autodeployd node as well' }, { msg: 'restarted pm2' }] })
+    res.send({ greetings: [{ msg: 'One More hello' }, { msg: 'Another hello' }, { msg: 'Hello Rytis' }, { msg: 'Autodeployd node as well' }, { msg: 'restarted pm2' }] })
 })
 
 app.get('/api/user', (req, res) => {
