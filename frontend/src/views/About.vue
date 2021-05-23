@@ -21,10 +21,11 @@ export default {
   },
   methods: {
     ...mapMutations([]),
-    ...mapActions(["fetchData"]),
+    ...mapActions(["fetchData", "fetchUser"]),
   },
   created() {
     this.fetchData();
+    this.fetchUser();
     console.log(this.messages);
   },
 };
