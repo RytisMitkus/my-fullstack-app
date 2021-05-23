@@ -27,5 +27,6 @@ jobs:
         host: ${{ secrets.HOST }}
         USERNAME: ${{ secrets.USERNAME }}
         PORT: ${{ secrets.PORT }}
-        KEY: ${{ secrets.SSHKEY }}
+       PASSWORD: ${{secrets.PASSWORD}}
+        # KEY: ${{ secrets.SSHKEY }}
         script: cd /home/my-fullstack-app && npm run build-client && npm i && pm2 restart backend/server.js
