@@ -12,13 +12,13 @@ const portas = 3000
 // parse application/json
 // app.use(bodyParser.json())
 
-const db = mysql.createConnection({
-    host: 'localhost',
-    port: 8889,
-    user: 'root',
-    password: 'Emiliukas1-',
-    database: 'nodevue'
-});
+// const db = mysql.createConnection({
+//     host: 'localhost',
+//     port: 8889,
+//     user: 'root',
+//     password: 'Emiliukas1-',
+//     database: 'nodevue'
+// });
 
 db.connect((err) => {
     if (err) {
