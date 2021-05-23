@@ -3,7 +3,7 @@ import express from 'express'
 import mysql from 'mysql';
 // import bodyParser from 'body-parser';
 const app = express()
-const portas = 5000
+const portas = 3000
 // import path from 'path';
 
 // parse application/x-www-form-urlencoded
