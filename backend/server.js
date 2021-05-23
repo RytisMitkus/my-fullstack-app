@@ -3,7 +3,7 @@ import express from 'express'
 import mysql from 'mysql';
 // import bodyParser from 'body-parser';
 const app = express()
-// const portas = 3000
+const portas = 3000
 // import path from 'path';
 
 // parse application/x-www-form-urlencoded
@@ -43,7 +43,6 @@ app.get('/api/user', (req, res) => {
 
 })
 
-app.listen(3000, () => {
-    console.log(`Example app listening at http://localhost:3000`)
-    // console.log(`Example app listening at http://localhost:${portas}`)
+app.listen(portas, () => {
+    console.log(`Example app listening at http://localhost:${portas}`)
 })
