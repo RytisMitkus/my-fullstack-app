@@ -34,14 +34,14 @@ app.get('/api', (req, res) => {
     res.send({ greetings: [{ msg: 'Hello Rytis' }, { msg: 'Autodeployd node as well' }, { msg: 'restarted pm2' }] })
 })
 
-// app.get('/api/user', (req, res) => {
-//     let sql = 'SELECT * FROM `Persons`'
-//     const user = db.query(sql, function (error, results, fields) {
-//         if (error) throw error;
-//         res.send(results)
-//     });
+app.get('/api/user', (req, res) => {
+    let sql = 'SELECT * FROM `Persons`'
+    const user = db.query(sql, function (error, results, fields) {
+        if (error) throw error;
+        res.send(results)
+    });
 
-// })
+})
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${portas}`)
